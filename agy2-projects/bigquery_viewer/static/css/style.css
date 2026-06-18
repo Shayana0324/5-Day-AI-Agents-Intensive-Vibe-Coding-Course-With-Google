@@ -250,6 +250,12 @@ body {
     border-color: var(--text-secondary);
 }
 
+.theme-toggle-active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
 .icon {
     width: 1.25rem;
     height: 1.25rem;
@@ -688,9 +694,29 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 0.75rem;
     border-top: 1px solid var(--border-color);
     padding-top: 0.75rem;
     margin-top: auto;
+}
+
+.copy-btn-small {
+    background: transparent;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+.copy-btn-small:hover {
+    color: var(--accent);
+    background: rgba(var(--accent-rgb), 0.08);
 }
 
 .tweet-btn-small {
